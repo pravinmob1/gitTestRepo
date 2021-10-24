@@ -140,6 +140,5 @@ Route::resource('user', UserController::class);
 
 Route::get('/pack/{name}',function($name){
     $pack = new TestPackage();
-    return $pack->getName($name);
     return strtoupper($pack->name($name));
 });
