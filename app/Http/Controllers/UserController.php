@@ -13,6 +13,7 @@ class UserController extends Controller
      */
     public function index()
     {
+        // print here
         dd(view()->share('Test'));
     }
 
