@@ -140,7 +140,6 @@ Route::resource('user', UserController::class);
 
 Route::get('/pack/{name}',function($name){
     // Package call here//
-    
     $pack = new TestPackage(); 
     return strtoupper($pack->name($name));
 });
